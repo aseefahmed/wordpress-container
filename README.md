@@ -19,4 +19,13 @@ The service should be logically separated into 3 distinct areas
     - Private Subnets
     - Rout Tables
     
-* Application needs to be accessed via the Load Balancer's DNS not. Direct access to the EC2 instance will not be possible. 
+* Application needs to be accessed via the Load Balancer's DNS name. Direct access to the EC2 instance will not be possible. 
+
+# Proposed Improvement
+
+Because of time constraint, it was not possible to fully implement the architecture. However, its worth noting the improvements that can be brought to this architecutre.
+
+* statics files such as images/javascript/css/videos can be stored into S3 bucket instead of directly stored in the EC2 machine
+* Autoscaling group can be implemented to scale in/out number of EC2 instances based on demands
+* Rout53 can be integrated with load balancer
+* Cloudfront can be integrated with S3 bucket to imporove latency. 
