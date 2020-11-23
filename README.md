@@ -21,7 +21,7 @@ The service should be logically separated into 3 distinct areas
     
 * Application needs to be accessed via the Load Balancer's DNS name. Direct access to the EC2 instance will not be possible. 
 
-# Proposed Improvement
+# Proposed Improvements
 
 Because of time constraint, it was not possible to fully implement the architecture. However, its worth noting the improvements that can be brought to this architecutre.
 
