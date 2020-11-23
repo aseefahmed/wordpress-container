@@ -11,6 +11,7 @@ The service should be logically separated into 3 distinct areas
 * Terraform code has been resided into 'terraform' folder
 * The solution has been deployed into AWS Cloud
 * Custom AMI has been used with preinstalled libraries/tools
+* Secrets like database password are stored into AWS Secret Manager instead of directly injecting into the code
 * The terraform code will deploy the following resources:
     - Load Balancer
     - EC2 instace pools
@@ -20,6 +21,7 @@ The service should be logically separated into 3 distinct areas
     - Rout Tables
     
 * Application needs to be accessed via the Load Balancer's DNS name. Direct access to the EC2 instance will not be possible. 
+* Wordpress application is dockerized based on the source code
 
 # Proposed Improvements
 
