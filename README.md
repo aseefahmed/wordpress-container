@@ -31,3 +31,4 @@ Because of time constraint, it was not possible to fully implement the architect
 * Autoscaling group can be implemented to scale in/out number of EC2 instances based on demands
 * Rout53 can be integrated with load balancer
 * Cloudfront can be integrated with S3 bucket to imporove latency. 
+* At this stage, the application is a monolothic application. It can be furhter broken into microservices and deployed into kubernetes cluster to make the application highly available and fault tolerant. 
